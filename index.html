@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smush Burger</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <a href="#"><img src="imgs/logo-smush-removebg-preview.png" alt="logo-smush"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#smush" class="smush-burgers">Menu</a></li>
+                <li><a href="#loc" class="location">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <div class="hero-row">
+            <div class="left-col">
+                <img src="imgs/bitejoyrepeat.jpg" alt="hero-img">
+                <button class="hero-btn" onclick="scrollToContact()"><a href="#">Order Now</a></button>
+            </div>
+            <div class="right-col">
+                <img src="imgs/burger.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="smush" class="smush-burgers" data-aos="fade-up">
+
+        <div class="smush-title">
+            <h1>Smush Burgers</h1>
+            <img src="imgs/its_smush_time-removebg-preview.png" alt="smush-img">
+        </div>
+        <div class="smush-row">
+            <div class="smush-item">
+                <img src="imgs/Double Smash.jpeg" alt="single smush">
+                <h3>Single Smush Burger</h3>
+                <p>Single Angus Patty, Single Cheese, Onions, Pickles, Special Sauce, Potato Bun</p>
+                <h5>$6.50</h5>
+            </div>
+            <div class="smush-item">
+                <img src="imgs/Double Smash.jpeg" alt="double smush">
+                <h3>Double Smush Burger</h3>
+                <p>Double Angus Patty, Single Cheese, Onions, Pickles, Special Sauce, Potato Bun</p>
+                <h5>$8.00</h5>
+            </div>
+            <div class="smush-item">
+                <img src="imgs/Triple Smash.jpeg" alt="triple smush">
+                <h3>Triple Smush Burger</h3>
+                <p>Triple Angus Patty, Single Cheese, Onions, Pickles, Special Sauce, Potato Bun</p>
+                <h5>$9.50</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="chicken-burgers">
+        <h1>Chicken Burgers</h1>
+        <div class="chicken-row">
+            <div class="chicken-item">
+                <img src="imgs/ClassicChick.jpeg" alt="classic chick">
+                <h3>Classic-Chick</h3>
+                <p>Crispy Fried Chicken, Coleslaw, pickles, Mayo, Sauce, Potato Bun</p>
+                <h5>$5.00</h5>
+            </div>
+            <div class="chicken-item">
+                <img src="imgs/BbqChick.jpeg" alt="bbq chick">
+                <h3>Bbq-Chick</h3>
+                <p>Crispy Fried Chicken dipped in Barbecue, Coleslaw, pickles, Mayo, Sauce, Potato Bun</p>
+                <h5>$5.00</h5>
+            </div>
+            <div class="chicken-item">
+                <img src="imgs/BuffChick.jpeg" alt="buff chick">
+                <h3>Buff-Chick</h3>
+                <p>Crispy Fried Chicken dipped in Buffalo, Coleslaw, pickles, Mayo, Sauce, Potato Bun</p>
+                <h5>$5.00</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="fries" data-aos="zoom-in">
+        <h1>Fries</h1>
+        <div class="fries-grid">
+            <div class="fries-item">
+                <img src="imgs/fries.jpg" alt="classic fries" style="width: 40%;">
+                <h3>Imported Fries</h3>
+                <h5>$3.00</h5>
+            </div>
+            <div class="fries-item">
+                <img src="imgs/Chicknfries.jpeg" alt="chicken fries">
+                <h3>Chick 'N' Fries</h3>
+                <p>Imported Fries, Crispy Fried Chicken, Pickles, Special Sauce</p>
+                <h5>$9.00</h5>
+            </div>
+            <div class="fries-item">
+                <img src="imgs/Beefnfries.jpeg" alt="beef fries">
+                <h3>Beef 'N' Fries</h3>
+                <p style="text-align: end;">Imported Fries, Double Angus Patties, Cheese, Bacon, Onions, Pickles, Special Sauce</p>
+                <h5>$13.00</h5>
+            </div>
+        </div>
+    </section>
+
+    <section class="dessert" data-aos="fade-right">
+        <h1>Dessert</h1>
+        <div class="dessert-item">
+            <img src="imgs/Dessert.jpeg" alt="dessert">
+            <h3>Smush Dessert</h3>
+            <p>Nutella Chocolate, Nestle, Banana, Brioche Bun</p>
+            <h5>$3.00</h5>
+        </div>
+    </section>
+
+    <section class="drinks" data-aos="slide-up">
+        <h1>Drinks</h1>
+        <div class="drinks-grid">
+            <div class="drinks-item">
+                <img src="imgs/tannourine-removebg-preview (1).png" alt="water">
+                <h4>Water</h4>
+                <h5>$0.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/red_fruits-removebg-preview.png" alt="iced tea peach">
+                <h4>Iced Tea Peach</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/lemontea.png" alt="diet iced tea">
+                <h4>Iced Tea Peach Diet</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/red_fruits-removebg-preview.png" alt="red fruits">
+                <h4>Iced Tea Red Fruits</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/sparkling-removebg-preview.png" alt="sparkling water">
+                <h4>Rim Sparkling Water</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/cocacola-removebg-preview.png" alt="coca">
+                <h4>Coca-Cola</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/cocacolazero-removebg-preview.png" alt="coca zero">
+                <h4>Coca-Cola Zero Sugar</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/fanta-removebg-preview.png" alt="fanta">
+                <h4>Fanta</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/sprite-removebg-preview.png" alt="sprite">
+                <h4>Sprite</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/spritezero-removebg-preview.png" alt="sprite zero">
+                <h4>Sprite Zero</h4>
+                <h5>$1.5</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/beer-removebg-preview (1).png" alt="beer">
+                <h4>Beer</h4>
+                <h5>$5.00</h5>
+            </div>
+            <div class="drinks-item">
+                <img src="imgs/beer_ligh-removebg-preview.png" alt="light beer">
+                <h4>Light Beer</h4>
+                <h5>$5.00</h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="loc" class="location" data-aos="flip-left">
+        <h1>Location</h1>
+        <p><i class="fas fa-map-marker-alt"></i> Village Court, Kfarhata, Zgharta</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.4458778357225!2d35.89958743433349!3d34.37441231653159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1521f7a8fd557a45%3A0xd4c4b2ec3630c2e3!2sBamboo%20Asian%20Cuisine!5e0!3m2!1sen!2slb!4v1739912446929!5m2!1sen!2slb" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+        <div class="contact-grid">
+            <div class="contact-left-col">
+                <h1>Contact Us</h1>
+                <p><i class="fas fa-phone"></i> +961 71 632 545</p>
+                <p>Call Us for Fast Delivery</p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/smushburger" target="_blank">Find Us on Instagram!</a></p>
+            </div>
+            <div class="contact-right-col">
+                <img src="imgs/delivery2.jpg" alt="delivery">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lea Chadraoui - All Rights Reserved</p>
+    </footer>
+
+    <script>
+    AOS.init({
+        duration: 1000, // Animation duration (in milliseconds)
+        once: true,     // Animation happens only once when scrolling down
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

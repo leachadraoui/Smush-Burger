@@ -1,0 +1,514 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06382D;
+    margin: 5px 100px;
+    padding: 0px;
+    font-family: 'Lalezar', cursive;
+    font-weight: 100;
+    letter-spacing: 1.5px;    
+    box-sizing: border-box;
+}
+nav, h1, h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    letter-spacing: 4.5px;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+    letter-spacing: 2.5px;
+}
+
+h3 {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2.5px;
+}
+
+h4 {
+    font-size: 14px;
+    color: white;
+}
+
+h5 {
+    font-size: 13px;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+}
+
+i {
+    color: #F47423;
+}
+
+.hero-row,
+.smush-burgers,
+.chicken-burgers,
+.dessert,
+.drinks,
+.location,
+.contact-us {
+    margin: 10% 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #06382d;
+    width: calc(100% - 200px);
+    height: 100px;
+    top: 0;
+    backdrop-filter: blur(15px);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F47423;
+}
+
+header a img {
+    height: 130px;
+}
+
+/* Hero */
+
+.hero-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.left-col img{
+    width: 100%;
+    height: 320px;
+}
+
+.left-col button{
+    margin-left: 140px;
+    background-color: #F47423;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: none;
+    transition: ease 0.2s;
+}
+
+.left-col .hero-btn a{
+    text-decoration: none;
+    color:white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.left-col button:hover{
+    background-color:white;
+}
+
+.left-col .hero-btn a:hover{
+    color:#F47423;
+}
+
+.right-col img{
+    width: 100%;
+}
+
+/* Smush Burger */ /* Chicken Burger */
+
+.chicken-burgers h1{
+    margin-bottom: 50px;
+}
+
+.smush-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smush-title img{
+    width: 60%;
+    height: 500px;
+    padding-left: 20%;
+}
+
+.smush-row, .chicken-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.smush-item, .chicken-item{
+    width: 400px;
+}
+
+.smush-item img, .chicken-item img{
+    width: 85%;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.smush-item h3, .chicken-item h3{
+    margin-bottom: 10px;
+}
+
+.smush-item p, .chicken-item p{
+    color:#F47423;
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+/* Fries */
+.fries-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0;
+}
+
+.fries-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.fries-item img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fries-item h3 {
+    margin: 10px 0;
+}
+
+.fries-item p {
+    color: #F47423;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+
+/* Adjust vertical positioning */
+.fries-item:nth-child(1) {
+    align-items: flex-start;
+    transform: translateY(0px);
+}
+
+.fries-item:nth-child(2) {
+    align-items: center;
+    transform: translateY(-180px);
+}
+
+.fries-item:nth-child(3) {
+    align-items: flex-end;
+    transform: translateY(-300px);
+}
+
+/* Dessert */
+
+.dessert{
+    margin-top: -200px;
+}
+
+.dessert-item img{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 300px;
+}
+
+.dessert h3{
+    margin-bottom: 10px;
+}
+
+.dessert p{
+    margin-bottom: 10px;
+    color: #F47423;
+}
+
+
+/* Drinks */
+.drinks {
+    margin: 10% 0;
+}
+
+.drinks h1{
+    margin-bottom: 30px;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.drinks-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.drinks-item img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.drinks-item h4 {
+    text-align: center;
+    color: #F47423;
+    padding: 5px 0;
+}
+
+.drinks-item h5 {
+    text-align: center;
+}
+
+
+/* Location */
+
+.location{
+    margin: 10% 0;
+}
+
+.location p{
+    color: white;
+    margin: 20px 0;
+}
+
+/* Contact Us */
+.contact-us{
+    margin: 5% 0;
+}
+
+.contact-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px;
+}
+
+.contact-left-col{
+    margin-right: 20px;
+}
+
+.contact-right-col img{
+    width: 100%;
+    height: 400px;
+}
+
+.contact-us p{
+    color: white;
+    margin-top: 20px;
+}
+
+.contact-us a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer::before{
+    content: "";
+    display: block;
+    border: 0.2px solid white;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        margin: 5px 80px;
+    }
+
+    .hero-row,
+    .smush-title,
+    .chicken-row,
+    .smush-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fries-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fries-item:nth-child(2) {
+        transform: translateY(0);
+    }
+
+    .fries-item:nth-child(3) {
+        transform: translateY(0);
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 5px 30px;
+        margin-right: 25px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+        margin: 10px 0;
+    }
+
+    .hero-section,
+    .smush-burgers,
+    .chicken-burgers,
+    .dessert,
+    .drinks,
+    .location,
+    .contact-us {
+        margin: 10% 0;
+    }
+
+    .hero-row {
+        gap: 40px;
+        margin-top: 70px;
+    }
+
+    .left-col button {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .smush-title,
+    .chicken-row,
+    .smush-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .smush-item, .chicken-item{
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .smush-title img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        padding-left: 20px;
+    }
+
+    .fries p{
+        display: none;
+    }
+
+    .dessert {
+        text-align: center;
+    }
+
+    .dessert-item img {
+        width: 50%;
+        height: 150px;
+    }
+
+    .drinks-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .location p, .contact-us p{
+        text-align: center;
+    }
+
+    .contact-left-col h1{
+        margin-bottom: 20px;
+    }
+
+    .contact-us p{
+        margin: 6px 0;
+    }
+
+    .contact-us img {
+        margin-top: 25px;
+    }
+
+    header {
+        padding: 8px 15px;
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding-right: 90px;
+        margin-top: -10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    header a img {
+        height: 80px;
+    }
+
+    footer p{
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .smush-burgers h1,
+    .chicken-burgers h1,
+    .fries h1,
+    .dessert h1,
+    .drinks h1 {
+        margin-bottom: 20px;
+    }
+}
